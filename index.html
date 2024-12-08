@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./style/styles.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_arrow arrow">
+            <svg class="arrow_left" width="17" height="20">
+                <use href="./icons.svg#left arrow icon"></use>
+            </svg>
+        </div>
+        <div>
+            <div class="header_title wrapper">
+                <div class="wrapper_title title">
+                    <h1 class="title_name">T-Space</h1>
+                    <div class="title_sign">
+                        <svg class="vector" width="16" height="16">
+                            <use href="./icons.svg#Vector"></use>
+                        </svg>
+                        <svg class="vector-1" width="7" height="5">
+                            <use href="./icons.svg#Vector-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text">бот</p>
+            </div>
+        </div>
+
+        <div>
+            <svg class="logo" width="36" height="36">
+                <use href="./icons.svg#t-space-logo"></use>
+            </svg>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main_chat" id="chat-messages">
+            <div class="container chat">
+                <h2 class="chat_title">Сьогодні</h2>
+                <div class="chat_messages messages">
+                    <div class="messages_text">
+                        <p>
+                            Запускаємо курс з арбітражу трафіку! Отримайте цінні знання від
+                            експертів. Поглиблене вивчення сучасних стратегій.
+                        </p>
+                        <span class="time">11:45</span>
+                    </div>
+                    <div class="messages_text">
+                        <p>
+                            Приєднуйтесь до нашого нового курсу! Інтерактивні заняття,
+                            практичні завдання, сертифікат. Відмінна можливість підвищити
+                            кваліфікацію.
+                        </p>
+                        <span class="time">11:45</span>
+                    </div>
+                    <div class="messages_text">
+                        <p>
+                            Учасники отримають доступ до ексклюзивних матеріалів,
+                            консультацій та мережі контактів. Вивчайте нові тенденції
+                            арбітражу трафіку.
+                        </p>
+                        <span class="time">11:45</span>
+                    </div>
+                    <div class="messages_text messages_text-bold">
+                        <p>Хочете дізнатися більше?</p>
+
+                        <span class="time">11:45</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="buttons_button">Так</button>
+                        <button class="buttons_button">Ні</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section hidden">
+            <h2>Заповніть форму</h2>
+            <form id="user-form" class="form" novalidate>
+                <div class="form-field">
+                    <label for="first-name">Ім'я</label>
+                    <input type="text" id="first-name" name="first-name" required />
+                </div>
+                <div class="form-field">
+                    <label for="last-name">Прізвище</label>
+                    <input type="text" id="last-name" name="last-name" required />
+                </div>
+                <div class="form-field">
+                    <label for="email">Пошта</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-field">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required />
+                </div>
+                <button type="submit" class="submit-btn">Надіслати</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__item file-upload">
+            <button class="file-btn">
+                <svg class="icon" width="30" height="30">
+                    <use href="./icons.svg#clip"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="footer__item text-input">
+            <div class="input-container">
+                <input type="text" class="message-input" placeholder="Повідомлення" />
+                <button class="emoji-btn">
+                    <svg class="icon" width="20" height="20">
+                        <use href="./icons.svg#sticker"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="footer__item voice-record">
+            <button class="voice-btn">
+                <svg class="icon" width="30" height="30">
+                    <use href="./icons.svg#microphone"></use>
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
